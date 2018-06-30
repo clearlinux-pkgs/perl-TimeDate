@@ -4,7 +4,7 @@
 #
 Name     : perl-TimeDate
 Version  : 2.30
-Release  : 1
+Release  : 2
 URL      : https://cpan.metacpan.org/authors/id/G/GB/GBARR/TimeDate-2.30.tar.gz
 Source0  : https://cpan.metacpan.org/authors/id/G/GB/GBARR/TimeDate-2.30.tar.gz
 Summary  : unknown
