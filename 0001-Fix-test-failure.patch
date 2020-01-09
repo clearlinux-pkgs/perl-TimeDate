@@ -1,0 +1,29 @@
+From cea2e13b485ce7487ae3fb8b07c63be0326b49e2 Mon Sep 17 00:00:00 2001
+From: "Brett T. Warden" <brett.t.warden@intel.com>
+Date: Thu, 9 Jan 2020 10:31:05 -0800
+Subject: [PATCH] Fix test failure
+
+Tests fail, repeating:
+Redundant argument in printf at t/date.t line 180.
+
+Patch from https://github.com/gbarr/perl-TimeDate/issues/20
+---
+ t/getdate.t | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+diff --git a/t/getdate.t b/t/getdate.t
+index 31b577b..82c5850 100644
+--- a/t/getdate.t
++++ b/t/getdate.t
+@@ -156,7 +156,7 @@ Jul 22 10:00:00 UTC 2002	     ;1027332000
+ !;
+ 
+ require Time::Local;
+-my $offset = Time::Local::timegm(0,0,0,1,0,70);
++my $offset = Time::Local::timegm(0,0,0,1,0,1970);
+ 
+ @data = split(/\n/, $data);
+ 
+-- 
+2.24.1
+
