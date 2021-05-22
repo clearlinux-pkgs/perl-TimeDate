@@ -4,7 +4,7 @@
 #
 Name     : perl-TimeDate
 Version  : 2.33
-Release  : 19
+Release  : 20
 URL      : https://cpan.metacpan.org/authors/id/A/AT/ATOOMIC/TimeDate-2.33.tar.gz
 Source0  : https://cpan.metacpan.org/authors/id/A/AT/ATOOMIC/TimeDate-2.33.tar.gz
 Summary  : unknown
